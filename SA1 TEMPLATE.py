@@ -69,7 +69,7 @@ car=image_load("Assets/yellowCar.png",70,60)
 stone=image_load("Assets/stone.png",70,60)
 
 #create player object here 
-player1=Player("John",150,500)
+
 
 
 
@@ -90,8 +90,7 @@ while carryOn:
   #screen.blit(car2,(car2x,car2y))
   
  #update location here 
-  player1.location_update(event)
-
+  
 
 
 
@@ -117,7 +116,7 @@ while carryOn:
   game_time=t2-t1
   game_time=round(game_time,2)
   #update game time here
-  player1.time_update(game_time)
+ 
   
   #Display gametime here
   text_display(24,"TIME ELAPSED: " + str(game_time)+"seconds",255,0,255,50,10)
